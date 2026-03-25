@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews &#x2014; Sinergia Tattoo Studio</title>
+  <meta name="description" content="Google Reviews for Sinergia Tattoo Studio. &#x2605; 5 average from 18 reviews.">
+  <link rel="canonical" href="https://bayouwebstudio.github.io/sinergiatattoostudio/reviews.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    
+    :root {
+      --black: #0a0a0a;
+      --charcoal: #141414;
+      --gold: #C9A84C;
+      --white: #f5f5f0;
+      --dim: #888;
+      --border: rgba(255,255,255,0.07);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.3rem; font-weight: 400;
+      letter-spacing: 0.1em; color: var(--white);
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a {
+      color: var(--dim); text-decoration: none;
+      font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 1px; background: var(--white); margin: 5px 0; transition: all 0.3s; }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px,4px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px,-4px); }
+    .mobile-menu {
+      display: none; position: fixed; top: 65px; left: 0; right: 0; z-index: 99;
+      background: var(--charcoal); padding: 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block; color: var(--white); text-decoration: none;
+      font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 12px 0; border-bottom: 1px solid var(--border);
+    }
+    .book-float {
+      position: fixed; bottom: 32px; right: 32px; z-index: 200;
+      background: var(--gold); color: #000;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+      text-decoration: none; padding: 14px 22px; border-radius: 2px;
+      box-shadow: 0 4px 24px rgba(201,168,76,0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .book-float:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,168,76,0.5); }
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    footer {
+      background: var(--charcoal); padding: 48px 72px;
+      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .footer-logo { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.1rem; color: var(--dim); }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { color: var(--dim); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { color: var(--dim); font-size: 0.72rem; }
+    .section-label { font-size: 0.68rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+    h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; }
+    .btn-gold { display: inline-block; background: var(--gold); color: #000; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 40px; transition: opacity 0.2s; }
+    .btn-gold:hover { opacity: 0.88; }
+    .btn-outline { display: inline-block; border: 1px solid var(--border); color: var(--white); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 14px 36px; transition: border-color 0.2s, color 0.2s; }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+    @media (max-width: 900px) {
+      nav { padding: 18px 24px; }
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      footer { padding: 40px 24px; flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 600px) { footer { padding: 32px 20px; } }
+  
+    .page-hero { padding: 140px 72px 64px; background: var(--charcoal); border-bottom: 1px solid var(--border); }
+    h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(3rem, 6vw, 5rem); font-weight: 300; line-height: 1; }
+    .reviews-body { padding: 96px 72px; max-width: 1200px; margin: 0 auto; }
+    .rating-summary { text-align: center; margin-bottom: 64px; padding: 48px; border: 1px solid var(--border); }
+    .rating-big { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 5rem; font-weight: 300; color: var(--gold); line-height: 1; }
+    .rating-stars { color: var(--gold); font-size: 1.5rem; letter-spacing: 4px; margin: 12px 0; }
+    .rating-count { color: var(--dim); font-size: 0.88rem; letter-spacing: 0.1em; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 48px; }
+    .review-card { border: 1px solid var(--border); padding: 32px; }
+    .review-stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 12px; letter-spacing: 2px; }
+    .review-text { color: var(--dim); font-size: 0.88rem; line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+    .review-author { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); }
+    .review-time { font-size: 0.68rem; color: var(--dim); margin-top: 4px; }
+    .leave-review { text-align: center; padding: 48px; border: 1px solid var(--border); }
+    .leave-review h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; font-weight: 300; margin-bottom: 16px; }
+    .leave-review p { color: var(--dim); margin-bottom: 32px; }
+    @media (max-width: 900px) { .page-hero { padding: 120px 24px 48px; } .reviews-body { padding: 60px 24px; } .reviews-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <a href="./index.html" class="nav-logo">Sinergia Tattoo Studio</a>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./artists/index.html">Our Artists</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./reviews.html">Reviews</a></li>
+      <li><a href="./booking.html">Book Now</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu" onclick="this.classList.toggle('open');document.querySelector('.mobile-menu').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu">
+    <a href="./index.html">Home</a>
+    <a href="./artists/index.html">Our Artists</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./reviews.html">Reviews</a>
+    <a href="./booking.html">Book Now</a>
+  </div>
+  <a href="./booking.html" class="book-float">Book Now</a>
+
+  <section class="page-hero">
+    <p class="section-label fade-up">What Clients Say</p>
+    <h1 class="fade-up">Reviews</h1>
+  </section>
+
+  <div class="reviews-body">
+    
+    <div class="rating-summary fade-up">
+      <div class="rating-big">5</div>
+      <div class="rating-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+      <div class="rating-count">18 Google Reviews</div>
+    </div>
+
+    
+    <div class="reviews-grid">
+      
+      <div class="review-card fade-up">
+        <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+        <p class="review-text">"I got a tattoo from Dan Mata, and the service was exceptional. I felt his attention to detail, clear and friendly communication, and constant concern for how I was feeling. Upon arrival, the person who greeted me was also friendly, and in general, everyone there was kind.
+
+The building is discreet."</p>
+        <div class="review-author">Fabiola Corona</div>
+        <div class="review-time">a year ago</div>
+      </div>
+
+      <div class="review-card fade-up">
+        <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+        <p class="review-text">"Highly recommended place! I went with the tattoo artist Dan, and both he and the studio staff made it a very pleasant experience."</p>
+        <div class="review-author">Lau Lara</div>
+        <div class="review-time">2 years ago</div>
+      </div>
+
+      <div class="review-card fade-up">
+        <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+        <p class="review-text">"They are super professional, the tattoo they did for me turned out amazing, I definitely recommend them."</p>
+        <div class="review-author">Hannah cerati</div>
+        <div class="review-time">2 years ago</div>
+      </div>
+
+      <div class="review-card fade-up">
+        <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+        <p class="review-text">"Good vibes and excellent work!!!"</p>
+        <div class="review-author">Juan Ernesto L&#xf3;pez</div>
+        <div class="review-time">2 years ago</div>
+      </div>
+
+      <div class="review-card fade-up">
+        <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+        <p class="review-text">"Highly professional and with excellent customer service; highly recommended."</p>
+        <div class="review-author">RAMON ZD</div>
+        <div class="review-time">2 years ago</div>
+      </div>
+    </div>
+
+    <div class="leave-review fade-up">
+      <h2>Leave a Review</h2>
+      <p>Had a great experience? We'd love to hear from you on Google.</p>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJg7Kfe6r_0YURAtMv6kw1M0Q" target="_blank" rel="noopener" class="btn-gold">Leave a Google Review</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Sinergia Tattoo Studio</div>
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="./artists/index.html">Artists</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./reviews.html">Reviews</a>
+      <a href="./booking.html">Book Now</a>
+    </div>
+    <div class="footer-copy">&#xa9; 2026 Sinergia Tattoo Studio</div>
+  </footer>
+  
+  <script>
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+    });
+  </script>
+</body>
+</html>
